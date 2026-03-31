@@ -1,13 +1,26 @@
 package com.example.secretlab.data
 
 import android.content.Context
+import androidx.security.crypto.EncryptedSharedPreferences
+import androidx.security.crypto.MasterKey
 
 class LocalAccountVault(context: Context) {
-    private val rawBox = context.getSharedPreferences(BIN_NAME, Context.MODE_PRIVATE)
+
+    private val masterKey = MasterKey.Builder(context)
+        .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
+        .build()
+
+    private val secureBox = EncryptedSharedPreferences.create(
+        context,
+        BIN_NAME,
+        masterKey,
+        EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
+        EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
+    )
 
     fun saveLocalAccount(mail: String, secret: String) {
         // here write solution to C05.5
-        rawBox.edit()
+        secureBox.edit()
             .putString(MAIL_SLOT, mail)
             .putString(SECRET_SLOT, secret)
             .apply()
@@ -15,12 +28,12 @@ class LocalAccountVault(context: Context) {
 
     fun readAccountMail(): String? {
         // here write solution to C05.5
-        return rawBox.getString(MAIL_SLOT, null)
+        return secureBox.getString(MAIL_SLOT, null)
     }
 
     fun readAccountSecret(): String? {
         // here write solution to C05.5
-        return rawBox.getString(SECRET_SLOT, null)
+        return secureBox.getString(SECRET_SLOT, null)
     }
 
     companion object {

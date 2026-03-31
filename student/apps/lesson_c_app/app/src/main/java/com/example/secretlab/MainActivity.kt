@@ -108,9 +108,9 @@ private fun SecretLabApp(
                     onSignIn = { mail, secret ->
                         val result = authGateway.signIn(mail, secret)
                         if (result != null) {
-                            stash.cacheOpenSecret(secret) // TODO(C05-1): remove local password persistence after login.
-                            stash.cacheTravelCard(result.travelCard) // TODO(C05-2): move the session artifact to SecureSessionStore.
-                            logger.reportGateOpen(secret, result.travelCard) // TODO(C05-4): stop printing full secrets after login.
+//
+                            vault.saveTravelCard(result.travelCard) // TODO(C05-2): move the session artifact to SecureSessionStore.
+
                             currentTicket = result.travelCard
                             banner = "Signed in as ${result.displayName}"
                             pane = Pane.Home

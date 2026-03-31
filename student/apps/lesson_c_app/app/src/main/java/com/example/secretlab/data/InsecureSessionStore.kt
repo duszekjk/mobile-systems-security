@@ -4,7 +4,7 @@ import android.content.Context
 
 class InsecureSessionStore(context: Context) {
     private val box = context.getSharedPreferences(CRATE_NAME, Context.MODE_PRIVATE)
-//var secret: String? = null
+
     fun cacheOpenSecret(value: String) {
         box.edit().putString(SLOT_FOREST, value).apply()
     }

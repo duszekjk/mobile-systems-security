@@ -12,19 +12,37 @@ object LocalPasswordHasher {
 
     // TODO(C07-1): derive a PBKDF2 hash using password chars, salt bytes, iteration count and key length.
     fun derive(password: String, saltText: String): String {
-        return password
+        val saltBytes = utf8Bytes(saltText)
+        val keySpec: KeySpec = PBEKeySpec(
+            password.toCharArray(),
+            saltBytes,
+            ITERATION_COUNT,
+            KEY_LENGTH_BITS,
+
+        )
+        val factory = SecretKeyFactory.getInstance(ALGORITHM_NAME)
+        return toHex(factory.generateSecret(keySpec).encoded)
     }
 
     // TODO(C07-2): encode the verifier as:
     // pbkdf2_sha256$<iterations>$<saltHex>$<hashHex>
     fun buildRecord(password: String, saltText: String): String {
         val hashHex = derive(password, saltText)
+        val saltHex = toHex(utf8Bytes(saltText))
         return listOf(RECORD_PREFIX, ITERATION_COUNT.toString(), saltText, hashHex).joinToString("$")
     }
 
     // TODO(C07-3): parse the record, recompute the hash and compare with the stored hash.
     fun verify(password: String, record: String): Boolean {
-        return false
+        val parts = record.split("$")
+        if (parts.size != 4) return false
+        if (parts[0] != RECORD_PREFIX) return false
+        val saltHex = parts[2]
+        val storedHashHex = parts[3]
+        val saltText = String(fromHex(saltHex), Charsets.UTF_8)
+        val computedHashHex = derive(password, saltText)
+
+        return computedHashHex == storedHashHex
     }
 
     fun utf8Bytes(text: String): ByteArray = text.toByteArray(Charsets.UTF_8)

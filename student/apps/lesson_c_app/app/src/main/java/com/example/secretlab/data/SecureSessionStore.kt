@@ -23,6 +23,8 @@ class SecureSessionStore(context: Context) {
         encryptedBox.edit().remove(SECURE_SLOT).apply()
     }
 
+    fun cacheTravelCard(travelCard: String) {}
+
     companion object {
         const val SECURE_CRATE = "cipher_archive"
         const val SECURE_SLOT = "amber_dock"
