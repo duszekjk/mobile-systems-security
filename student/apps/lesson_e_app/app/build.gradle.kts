@@ -179,7 +179,7 @@ tasks.register("bsmEvidence") {
         )
         println(
             evidenceFor(
-                taskId = "E05",
+                taskId = "E04",
                 fqcn = "com.example.secretlab.secure.SecretBoxStudentTest",
                 required = listOf(
                     "bindsCiphertextToContextWithAad",
