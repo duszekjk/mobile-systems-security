@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -23,6 +24,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.unit.dp
 import com.example.secretlab.secure.BiometricBoundSecretStore
 import com.example.secretlab.secure.BiometricPromptGate
@@ -86,6 +88,7 @@ private fun LessonEApp(
         Column(
             modifier = Modifier
                 .fillMaxSize()
+                .imePadding()
                 .padding(innerPadding)
                 .padding(16.dp)
                 .verticalScroll(rememberScrollState()),
@@ -195,6 +198,7 @@ private fun SecureNoteCard(
 ) {
     var opened by remember { mutableStateOf(false) }
     var noteText by remember { mutableStateOf("") }
+    val keyboard = LocalSoftwareKeyboardController.current
 
     if (!opened) {
         Button(onClick = {
@@ -235,6 +239,7 @@ private fun SecureNoteCard(
         minLines = 6,
     )
     Button(onClick = {
+        keyboard?.hide()
         val iv = secretBox.generateIv()
         val message = secretBox.encryptBound(noteText.encodeToByteArray(), iv, NOTE_CONTEXT)
         noteRepo.writeEncryptedNote(message)

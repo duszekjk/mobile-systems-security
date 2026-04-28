@@ -45,6 +45,7 @@ class BiometricPromptGate(
             .setTitle("Unlock secret")
             .setSubtitle("Verify biometrics to issue a GateToken")
             .setAllowedAuthenticators(AUTHENTICATORS)
+            .setNegativeButtonText("Cancel")
             .build()
 
         prompt.authenticate(info)
@@ -54,4 +55,3 @@ class BiometricPromptGate(
         val AUTHENTICATORS: Int = BiometricManager.Authenticators.BIOMETRIC_STRONG
     }
 }
-
