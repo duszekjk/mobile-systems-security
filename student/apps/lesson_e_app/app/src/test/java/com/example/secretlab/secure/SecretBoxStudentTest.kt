@@ -34,6 +34,17 @@ class SecretBoxStudentTest {
         assertNull(decrypted)
     }
 
+    @Test
+    fun generateIvReturns12BytesAndIsFresh() {
+        val box = SecretBox(InMemoryKeyProvider(random))
+        val iv1 = box.generateIv()
+        val iv2 = box.generateIv()
+        assertEquals(SecretBox.IV_BYTES, iv1.size)
+        assertEquals(SecretBox.IV_BYTES, iv2.size)
+        // probabilistic, but collision is negligibly unlikely for 96-bit IVs
+        assertEquals(false, iv1.contentEquals(iv2))
+    }
+
     @Test(expected = IllegalArgumentException::class)
     fun rejectsWrongIvLengthInEncrypt() {
         val box = SecretBox(InMemoryKeyProvider(random))
@@ -69,6 +80,20 @@ class SecretBoxStudentTest {
 
         val message = box.encryptBound(plaintext, iv, ctxGood)
         assertArrayEquals(plaintext, box.decryptBound(message, ctxGood))
+        assertNull(box.decryptBound(message, ctxBad))
+    }
+
+    @Test
+    fun decryptBoundReturnsNullWhenContextDiffers() {
+        val keyProvider = InMemoryKeyProvider(random)
+        val box = SecretBox(keyProvider)
+
+        val plaintext = "seed".encodeToByteArray()
+        val iv = ByteArray(SecretBox.IV_BYTES).also(random::nextBytes)
+        val ctxGood = "ctx:a".encodeToByteArray()
+        val ctxBad = "ctx:b".encodeToByteArray()
+
+        val message = box.encryptBound(plaintext, iv, ctxGood)
         assertNull(box.decryptBound(message, ctxBad))
     }
 }

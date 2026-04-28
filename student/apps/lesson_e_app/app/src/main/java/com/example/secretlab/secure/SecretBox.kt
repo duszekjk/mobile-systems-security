@@ -1,5 +1,6 @@
 package com.example.secretlab.secure
 
+import java.security.SecureRandom
 import javax.crypto.Cipher
 import javax.crypto.spec.GCMParameterSpec
 import javax.crypto.spec.SecretKeySpec
@@ -11,7 +12,16 @@ import javax.crypto.spec.SecretKeySpec
  */
 class SecretBox(
     private val keyProvider: KeyProvider,
+    private val random: SecureRandom = SecureRandom(),
 ) {
+    fun generateIv(): ByteArray {
+        // TODO(L05-7): generate a fresh random IV of length `IV_BYTES`.
+        // Requirements checked by tests:
+        // - returns a ByteArray of length IV_BYTES
+        // - successive calls should not return the same IV
+        return ByteArray(IV_BYTES)
+    }
+
     fun encrypt(plaintext: ByteArray, iv: ByteArray): ByteArray {
         // TODO(L05-1): implement AES/GCM/NoPadding encryption using the key from `keyProvider`.
         // Requirements checked by tests:

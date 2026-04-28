@@ -156,11 +156,10 @@ tasks.register("bsmEvidence") {
 
         println(
             evidenceFor(
-                taskId = "E02",
+                taskId = "E01",
                 fqcn = "com.example.secretlab.secure.SecretBoxStudentTest",
                 required = listOf(
                     "encryptsAsIvPlusCiphertextAndDecryptsBack",
-                    "returnsNullWhenMessageTooShort",
                     "detectsTamperingAndReturnsNull",
                     "rejectsWrongIvLengthInEncrypt",
                 ),
@@ -168,7 +167,7 @@ tasks.register("bsmEvidence") {
         )
         println(
             evidenceFor(
-                taskId = "E03",
+                taskId = "E02",
                 fqcn = "com.example.secretlab.secure.BiometricBoundSecretStoreStudentTest",
                 required = listOf(
                     "refusesToRevealSecretWithoutToken",
@@ -180,10 +179,30 @@ tasks.register("bsmEvidence") {
         )
         println(
             evidenceFor(
-                taskId = "E04",
+                taskId = "E03",
                 fqcn = "com.example.secretlab.secure.SecretBoxStudentTest",
                 required = listOf(
                     "bindsCiphertextToContextWithAad",
+                ),
+            ),
+        )
+        println(
+            evidenceFor(
+                taskId = "E04",
+                fqcn = "com.example.secretlab.secure.SecretBoxStudentTest",
+                required = listOf(
+                    "generateIvReturns12BytesAndIsFresh",
+                ),
+            ),
+        )
+        println(
+            evidenceFor(
+                taskId = "E05",
+                fqcn = "com.example.secretlab.secure.SecretBoxStudentTest",
+                required = listOf(
+                    "returnsNullWhenMessageTooShort",
+                    "decryptBoundReturnsNullWhenContextDiffers",
+                    "detectsTamperingAndReturnsNull",
                 ),
             ),
         )
