@@ -36,9 +36,10 @@ class MainActivity : ComponentActivity() {
 
         val random = SecureRandom()
         val secretBox = SecretBox(InMemoryKeyProvider(random))
+        val clock: () -> Long = { System.currentTimeMillis() / 1000L }
         val store = BiometricBoundSecretStore(
             secretBox = secretBox,
-            clock = { System.currentTimeMillis() / 1000L },
+            clock = clock,
             maxTokenAgeSeconds = 30,
         )
 
@@ -50,18 +51,18 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             SecretLabTheme {
-                LessonEApp(store = store)
+                LessonEApp(store = store, clock = clock)
             }
         }
     }
 }
 
 @Composable
-private fun LessonEApp(store: BiometricBoundSecretStore) {
-    var banner by remember { mutableStateOf("Goal: protect a local secret behind a user gate (biometrics/device credential).") }
+private fun LessonEApp(store: BiometricBoundSecretStore, clock: () -> Long) {
+    var banner by remember { mutableStateOf("Goal: protect a local secret behind a local user gate (simulated).") }
     var tokenIssuedAt by remember { mutableStateOf<Long?>(null) }
     var secretPreview by remember { mutableStateOf<String?>(null) }
-    var gateNowEpochSeconds by remember { mutableStateOf((System.currentTimeMillis() / 1000L).toString()) }
+    var gateNowEpochSeconds by remember { mutableStateOf(clock().toString()) }
 
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         Column(
@@ -83,22 +84,20 @@ private fun LessonEApp(store: BiometricBoundSecretStore) {
                     Text("Simulated gate", style = MaterialTheme.typography.titleLarge)
                     Text(
                         "In the lab you’ll enforce the gate policy in code and verify it via unit tests. " +
-                            "This screen simulates issuing a token after a successful biometric/device-credential prompt.",
+                            "This screen simulates issuing a token after a successful local user-auth gate.",
                     )
                     OutlinedTextField(
                         value = gateNowEpochSeconds,
-                        onValueChange = { gateNowEpochSeconds = it },
+                        onValueChange = { },
                         label = { Text("Now (epoch seconds)") },
+                        readOnly = true,
                         modifier = Modifier.fillMaxWidth(),
                     )
                     Button(onClick = {
-                        val now = gateNowEpochSeconds.toLongOrNull()
-                        if (now == null) {
-                            banner = "Invalid epoch seconds."
-                        } else {
-                            tokenIssuedAt = now
-                            banner = "Gate satisfied at t=$now. Token issued."
-                        }
+                        val now = clock()
+                        gateNowEpochSeconds = now.toString()
+                        tokenIssuedAt = now
+                        banner = "Gate satisfied at t=$now. Token issued."
                     }) {
                         Text("Issue GateToken")
                     }
@@ -126,4 +125,3 @@ private fun LessonEApp(store: BiometricBoundSecretStore) {
         }
     }
 }
-
