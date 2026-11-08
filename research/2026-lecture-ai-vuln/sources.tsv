@@ -1,0 +1,16 @@
+paper	https://arxiv.org/pdf/2401.17010.pdf	finetuning_large_language_models_for_vulnerability_detection.pdf
+paper	https://arxiv.org/pdf/2311.16169.pdf	understanding_the_effectiveness_of_large_language_models_in_detecting_security_vulnerabilities.pdf
+paper	https://arxiv.org/pdf/2405.17238.pdf	iris_llm-assisted_static_analysis_for_detecting_security_vulnerabilities.pdf
+paper	https://arxiv.org/pdf/2406.07595.pdf	vuldetectbench_evaluating_the_deep_capability_of_vulnerability_detection_with_large_language_models.pdf
+paper	https://arxiv.org/pdf/2411.06493.pdf	lprotector_an_llm-driven_vulnerability_detection_system.pdf
+paper	https://arxiv.org/pdf/2409.10490.pdf	code_vulnerability_detection_a_comparative_analysis_of_emerging_large_language_models.pdf
+paper	https://arxiv.org/pdf/2409.10574.pdf	detection_made_easy_potentials_of_large_language_models_for_solidity_vulnerabilities.pdf
+paper	https://arxiv.org/pdf/2401.01269.pdf	llbezpeky_leveraging_large_language_models_for_vulnerability_detection.pdf
+paper	https://arxiv.org/pdf/2308.10345.pdf	can_large_language_models_find_and_fix_vulnerable_software.pdf
+paper	https://cdn.openai.com/papers/gpt-4.pdf	gpt4_technical_report.pdf
+web	https://cdn.openai.com/papers/gpt-4-system-card.pdf	gpt4_system_card.pdf
+web	https://red.anthropic.com/2026/cvd/	anthropic_cvd_dashboard.html
+web	https://red.anthropic.com/2026/exploit/	anthropic_claude_exploit.html
+web	https://deepmind.google/blog/advancing-geminis-security-safeguards/	gemini_security_safeguards.html
+web	https://blog.google/security/google-launches-sec-gemini-v1-new/	sec_gemini_v1.html
+web	https://deepmind.google/blog/introducing-codemender-an-ai-agent-for-code-security/	codemender.html

@@ -14,12 +14,14 @@ data class IntegrityState(
 
 object TaskCompletion {
     fun task2Check(state: ProvenanceState): Boolean {
-        // TODO(G02): implement the APK / bundle provenance check from the lab proposal.
-        return false
+        return state.signingIdentityMatchesExpected &&
+            !state.buildLooksTampered &&
+            state.installTimeTrustIsSeparatedFromRuntimeTrust
     }
 
     fun task3Check(state: IntegrityState): Boolean {
-        // TODO(G03): implement the integrity-gated backend request from the lab proposal.
-        return false
+        return state.verdict == "ALLOW" &&
+            state.appPackageNameMatches &&
+            state.requestIsBoundToAppIdentity
     }
 }

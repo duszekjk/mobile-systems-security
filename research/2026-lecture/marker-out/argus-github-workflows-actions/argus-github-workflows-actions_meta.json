@@ -1,0 +1,444 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "Introduction",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 1,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                259.9939880371094,
+                0.0
+            ]
+        },
+        {
+            "title": "Background",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 2,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                720.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Workflow Components",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 2,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                633.614990234375,
+                0.0
+            ]
+        },
+        {
+            "title": "Workflow Execution",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 2,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                225.4659881591797,
+                0.0
+            ]
+        },
+        {
+            "title": " Workflow Secrets and Permissions",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 3,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                284.9259948730469,
+                0.0
+            ]
+        },
+        {
+            "title": "Motivation and Threat Model",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                329.02398681640625,
+                0.0
+            ]
+        },
+        {
+            "title": "Threat Model",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                174.8870086669922,
+                0.0
+            ]
+        },
+        {
+            "title": "Argus Design",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                412.135009765625,
+                0.0
+            ]
+        },
+        {
+            "title": "Taint Sources and Sinks",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                121.14599609375,
+                0.0
+            ]
+        },
+        {
+            "title": "Taint Sources",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                541.8159790039062,
+                0.0
+            ]
+        },
+        {
+            "title": "Taint Sinks",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                256.3199768066406,
+                0.0
+            ]
+        },
+        {
+            "title": "Taint Summary Creator",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                669.5479736328125,
+                0.0
+            ]
+        },
+        {
+            "title": "Composite Action",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                545.4220581054688,
+                0.0
+            ]
+        },
+        {
+            "title": "JavaScript Actions",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                281.8849792480469,
+                0.0
+            ]
+        },
+        {
+            "title": "Workflow Analysis",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                269.8829650878906,
+                0.0
+            ]
+        },
+        {
+            "title": "Workflow Taint Tracking",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                720.0,
+                0.0
+            ]
+        },
+        {
+            "title": " Impact Classifier",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                237.2659912109375,
+                0.0
+            ]
+        },
+        {
+            "title": "Evaluation",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                315.3089904785156,
+                0.0
+            ]
+        },
+        {
+            "title": "Datasets and Experimental Setup",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                536.9520263671875,
+                0.0
+            ]
+        },
+        {
+            "title": " Q1: Taint Analysis on Actions",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                481.4579772949219,
+                0.0
+            ]
+        },
+        {
+            "title": " Q2: Taint Analysis on Workflows",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                200.25599670410156,
+                0.0
+            ]
+        },
+        {
+            "title": " Q3: Vulnerability Identification",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                720.0,
+                0.0
+            ]
+        },
+        {
+            "title": " Responsible Disclosure",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                173.58700561523438,
+                0.0
+            ]
+        },
+        {
+            "title": "Q4: Comparative Evaluation",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                341.7650146484375,
+                0.0
+            ]
+        },
+        {
+            "title": "Limitations and Future Work",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                204.27999877929688,
+                0.0
+            ]
+        },
+        {
+            "title": "Related Work",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                481.6490173339844,
+                0.0
+            ]
+        },
+        {
+            "title": "Conclusions",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                504.5879821777344,
+                0.0
+            ]
+        },
+        {
+            "title": "Appendix",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 17,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                235.90798950195312,
+                0.0
+            ]
+        },
+        {
+            "title": " Intra-repository pull requests",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 17,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                210.8610076904297,
+                0.0
+            ]
+        },
+        {
+            "title": "Popularity",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 17,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                282.8499755859375,
+                0.0
+            ]
+        },
+        {
+            "title": "Workflow Vulnerabilities and Affecting Actions",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 17,
+            "view_mode": "XYZ",
+            "view_pos": [
+                317.8799743652344,
+                134.43199157714844,
+                0.0
+            ]
+        },
+        {
+            "title": "Challenges in Fixing Workflow Vulnerabilities",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 18,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                397.4750061035156,
+                0.0
+            ]
+        }
+    ],
+    "pages": 19,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0,
+        "ocr_engine": "none"
+    },
+    "block_stats": {
+        "header_footer": 18,
+        "code": 6,
+        "table": 9,
+        "equations": {
+            "successful_ocr": 1,
+            "unsuccessful_ocr": 4,
+            "equations": 5
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

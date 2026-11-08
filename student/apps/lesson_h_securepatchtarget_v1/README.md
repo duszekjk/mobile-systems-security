@@ -20,3 +20,8 @@ Baseline version for the patch verification exercise.
 - `CLEARTEXT_TRAFFIC_FIXED`
 - `BACKUP_DISABLED`
 - `ISSUE_FIXED`
+
+## Owned files
+
+- `app/src/main/AndroidManifest.xml`
+- `app/src/main/res/values/strings.xml`

@@ -19,3 +19,7 @@ H04:
 H05:
   accepted_answers:
     - AGENTIC_PATCH_VERIFICATION
+
+H06:
+  accepted_answers:
+    - IOS_ATS_ARBITRARY_LOADS

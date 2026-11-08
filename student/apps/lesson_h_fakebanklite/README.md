@@ -23,3 +23,8 @@ This project is intentionally insecure so students can practice reading APK-leve
 - `BACKUP_ENABLED`
 - `DEBUGGABLE_TRUE`
 - `EXPORTED_COMPONENT`
+
+## Owned files
+
+- `app/src/main/AndroidManifest.xml`
+- `app/src/main/res/values/strings.xml`

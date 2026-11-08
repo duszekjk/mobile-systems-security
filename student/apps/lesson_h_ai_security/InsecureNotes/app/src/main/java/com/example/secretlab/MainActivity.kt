@@ -6,23 +6,31 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.example.secretlab.ui.theme.SecretLabTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MaterialTheme {
+            SecretLabTheme {
                 Surface {
-                    InsecureNotesOverview()
+                    InsecureNotesScreen()
                 }
             }
         }
@@ -30,7 +38,11 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-private fun InsecureNotesOverview() {
+private fun InsecureNotesScreen() {
+    var title by remember { mutableStateOf("Team note") }
+    var body by remember { mutableStateOf("Lunch moved to 13:30.") }
+    var status by remember { mutableStateOf("Draft saved locally") }
+
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         Column(
             modifier = Modifier
@@ -39,10 +51,30 @@ private fun InsecureNotesOverview() {
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
-            Text("Insecure Notes Lab", style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.Bold)
-            Text("This project is the source-code scanning target for lesson H01.")
-            Text("Inspect SecretStore.kt, CryptoHelper.kt, and LoggingHelper.kt for common Android security mistakes.")
-            Text("All values are fake lab values and are safe to share inside the classroom context.")
+            Text("Insecure Notes", style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.Bold)
+            Text("A simple note editor with a fake sync button.")
+
+            OutlinedTextField(
+                value = title,
+                onValueChange = { title = it },
+                label = { Text("Note title") },
+                modifier = Modifier.fillMaxWidth(),
+                singleLine = true,
+            )
+            OutlinedTextField(
+                value = body,
+                onValueChange = { body = it },
+                label = { Text("Note text") },
+                modifier = Modifier.fillMaxWidth(),
+            )
+
+            Button(onClick = { status = "Saved \"$title\" to fake cloud" }) {
+                Text("Save note")
+            }
+            Button(onClick = { status = "Synced \"$title\" with mock server" }) {
+                Text("Sync now")
+            }
+            Text(status)
         }
     }
 }

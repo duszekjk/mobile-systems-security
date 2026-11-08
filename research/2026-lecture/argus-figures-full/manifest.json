@@ -1,0 +1,342 @@
+[
+  {
+    "page": 1,
+    "index": 4,
+    "bbox": [
+      118.0,
+      112.0,
+      148.0,
+      155.0
+    ],
+    "source_size": [
+      30,
+      43
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p01_i04.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p01_i04_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p01_i04_3x2.png"
+  },
+  {
+    "page": 1,
+    "index": 5,
+    "bbox": [
+      118.0,
+      135.0,
+      167.0,
+      167.0
+    ],
+    "source_size": [
+      49,
+      32
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p01_i05.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p01_i05_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p01_i05_3x2.png"
+  },
+  {
+    "page": 4,
+    "index": 16,
+    "bbox": [
+      332.86,
+      202.9,
+      339.6,
+      209.64
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p04_i16.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p04_i16_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p04_i16_3x2.png"
+  },
+  {
+    "page": 4,
+    "index": 20,
+    "bbox": [
+      521.93,
+      293.65,
+      528.67,
+      300.39
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p04_i20.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p04_i20_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p04_i20_3x2.png"
+  },
+  {
+    "page": 4,
+    "index": 21,
+    "bbox": [
+      462.55,
+      220.61,
+      469.3,
+      227.35
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p04_i21.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p04_i21_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p04_i21_3x2.png"
+  },
+  {
+    "page": 4,
+    "index": 22,
+    "bbox": [
+      289.14,
+      325.7,
+      295.89,
+      332.44
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p04_i22.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p04_i22_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p04_i22_3x2.png"
+  },
+  {
+    "page": 4,
+    "index": 26,
+    "bbox": [
+      187.93,
+      235.96,
+      194.68,
+      242.7
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p04_i26.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p04_i26_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p04_i26_3x2.png"
+  },
+  {
+    "page": 4,
+    "index": 27,
+    "bbox": [
+      170.39,
+      229.21,
+      177.14,
+      235.96
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p04_i27.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p04_i27_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p04_i27_3x2.png"
+  },
+  {
+    "page": 6,
+    "index": 7,
+    "bbox": [
+      343.44,
+      115.6,
+      358.47,
+      130.63
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p06_i07.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p06_i07_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p06_i07_3x2.png"
+  },
+  {
+    "page": 6,
+    "index": 8,
+    "bbox": [
+      330.91,
+      172.73,
+      345.94,
+      187.76
+    ],
+    "source_size": [
+      128,
+      128
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p06_i08.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p06_i08_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p06_i08_3x2.png"
+  },
+  {
+    "page": 6,
+    "index": 9,
+    "bbox": [
+      473.73,
+      138.15,
+      483.75,
+      148.17
+    ],
+    "source_size": [
+      128,
+      128
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p06_i09.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p06_i09_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p06_i09_3x2.png"
+  },
+  {
+    "page": 6,
+    "index": 10,
+    "bbox": [
+      532.86,
+      165.71,
+      542.89,
+      175.73
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p06_i10.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p06_i10_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p06_i10_3x2.png"
+  },
+  {
+    "page": 6,
+    "index": 11,
+    "bbox": [
+      458.7,
+      110.59,
+      483.75,
+      135.64
+    ],
+    "source_size": [
+      128,
+      128
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p06_i11.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p06_i11_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p06_i11_3x2.png"
+  },
+  {
+    "page": 6,
+    "index": 12,
+    "bbox": [
+      410.09,
+      158.19,
+      425.12,
+      173.23
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p06_i12.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p06_i12_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p06_i12_3x2.png"
+  },
+  {
+    "page": 6,
+    "index": 13,
+    "bbox": [
+      384.03,
+      83.02,
+      399.06,
+      98.06
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p06_i13.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p06_i13_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p06_i13_3x2.png"
+  },
+  {
+    "page": 6,
+    "index": 14,
+    "bbox": [
+      410.59,
+      83.02,
+      425.62,
+      98.06
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p06_i14.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p06_i14_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p06_i14_3x2.png"
+  },
+  {
+    "page": 6,
+    "index": 20,
+    "bbox": [
+      532.86,
+      186.76,
+      542.89,
+      196.78
+    ],
+    "source_size": [
+      100,
+      100
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p06_i20.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p06_i20_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p06_i20_3x2.png"
+  },
+  {
+    "page": 6,
+    "index": 33,
+    "bbox": [
+      467.72,
+      161.7,
+      477.74,
+      171.72
+    ],
+    "source_size": [
+      128,
+      128
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p06_i33.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p06_i33_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p06_i33_3x2.png"
+  },
+  {
+    "page": 8,
+    "index": 0,
+    "bbox": [
+      54.0,
+      85.0,
+      136.0,
+      172.0
+    ],
+    "source_size": [
+      82,
+      87
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p08_i00.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p08_i00_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p08_i00_3x2.png"
+  },
+  {
+    "page": 8,
+    "index": 1,
+    "bbox": [
+      54.0,
+      85.0,
+      137.0,
+      138.0
+    ],
+    "source_size": [
+      83,
+      53
+    ],
+    "raw": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/raw/p08_i01.png",
+    "portrait": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x4/p08_i01_3x4.png",
+    "landscape": "/Volumes/Macintosh HD2/Downloads/autotasks/bsm/research/2026-lecture/argus-figures-full/p3x2/p08_i01_3x2.png"
+  }
+]

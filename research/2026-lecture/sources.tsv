@@ -1,0 +1,14 @@
+# kind	url	relative_path
+paper	https://www.usenix.org/system/files/usenixsecurity23-muralee.pdf	argus-github-workflows-actions.pdf
+paper	https://www.usenix.org/system/files/usenixsecurity25-deng.pdf	chainfuzz-upstream-vulnerabilities-open-source-supply-chains.pdf
+paper	https://arxiv.org/pdf/2405.14993.pdf	sok-defense-oriented-evaluation-software-supply-chain-security.pdf
+paper	https://arxiv.org/pdf/2406.10109.pdf	sok-analysis-software-supply-chain-security-design-properties.pdf
+paper	https://arxiv.org/pdf/2112.10165.pdf	weak-links-npm-supply-chain.pdf
+paper	https://arxiv.org/pdf/1902.09217.pdf	small-world-high-risks-npm-ecosystem.pdf
+web	https://www.microsoft.com/en-us/security/blog/2026/04/01/mitigating-the-axios-npm-supply-chain-compromise/	axios-microsoft-security-blog.html
+web	https://tanstack.com/blog/npm-supply-chain-compromise-postmortem	tanstack-postmortem.html
+web	https://www.microsoft.com/en-us/security/blog/2026/06/02/preinstall-persistence-inside-red-hat-npm-miasma-credential-stealing-campaign/	redhat-miasma-microsoft-security-blog.html
+web	https://vapi.ai/blog/our-response-to-june-3-supply-chain-incident	vapi-june-3-supply-chain-incident.html
+web	https://www.morphisec.com/blog/critical-escan-threat-bulletin/	escan-morphisec-threat-bulletin.html
+web	https://securelist.com/escan-supply-chain-attack/118688/	escan-kaspersky-securelist.html
+web	https://zygosec.com/blog	zygosec-blog.html

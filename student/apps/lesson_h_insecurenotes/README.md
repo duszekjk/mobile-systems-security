@@ -31,3 +31,10 @@ This project is intentionally small and obviously insecure. The notebook uses it
 - All secrets are fake.
 - The project is only a teaching aid.
 - Students should submit the canonical code listed in the notebook, not a scanner paragraph.
+
+## Owned files
+
+- `app/src/main/java/com/example/secretlab/mfa/LabMfaFixture.kt`
+- `app/src/main/java/com/example/secretlab/data/LocalAccountVault.kt`
+- `app/src/main/java/com/example/secretlab/debug/LocalHashDemo.kt`
+- `app/src/main/java/com/example/secretlab/debug/SecurityLogger.kt`
